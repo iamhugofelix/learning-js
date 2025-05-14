@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JavaSsript</title>
+</head>
+<body>
+    <p>Open the browser console</p>
+    <script>
+        let name = 'Hugo';
+        const birthYear = 1991;
+        const currentYear = 2025;
+        let age = currentYear - birthYear;
+
+        console.log(`His name is ${name} and he's ${age} years old`);
+
+        if (age === 18 || age === 34) {
+            console.log('Wow, nailed it!')
+        }
+        
+        if (age < 18) {
+            console.log("You are a baby, go to sleep");
+        } else if (age > 65) {
+            console.log("You are old af!");
+        } else {
+            console.log("You are an adult");
+        }
+
+        // Trying if, else if, and else
+        let n = 3;
+
+        if (n === 1) {
+            console.log('Eu sou o único!');
+        } else if (n === 2) {
+            console.log('Somos pares!');
+        } else if (n === 3){
+            console.log('Somos um trio!');
+        } else {
+            console.log('Não somos nada...');
+        }
+
+        // Trying switch
+        switch (n) {
+            case 1:
+                console.log('Eu sou o único!');
+                break;
+            case 2:
+                console.log('Somos pares!');
+                break;
+            case 3:
+                console.log('Somos um trio!');
+                break;
+            default:
+                console.log('Não somos nada...');
+                break;
+        }
+
+    </script>
+</body>
+</html>
