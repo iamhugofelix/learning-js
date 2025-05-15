@@ -7,13 +7,18 @@
 </head>
 <body>
     <p>Open the browser console</p>
+    <a href="./exercises.html"> Go to exercises -></a>
     <script>
+console.log('Learning variables');
         let name = 'Hugo';
         const birthYear = 1991;
         const currentYear = 2025;
         let age = currentYear - birthYear;
 
         console.log(`His name is ${name} and he's ${age} years old`);
+console.log('----------');
+
+console.log('Learning If');
 
         if (age === 18 || age === 34) {
             console.log('Wow, nailed it!')
@@ -55,7 +60,33 @@
                 console.log('Não somos nada...');
                 break;
         }
+console.log('----------');
 
-    </script>
+console.log('Learning repetitions: For');
+
+        // Learning repetitions: for
+        for (let test1 = 0; test1 <= 6; test1++) {
+            console.log(test1);
+        } // Goes from 0 to 0 (use increase ++)
+
+        for (let test2 = 6; test2 <= 0; test2--) {
+        console.log(test2);
+        } // Goes from 6 to 0 (use decrease --)
+
+console.log('Learning repetitions: While');
+
+        // Learning repetitions: while
+        let test3 = 6;
+        while (test3 >= 0) {
+            console.log(test3);
+
+            if (test3 === 2) {
+                test3 = -1;
+            }
+
+            test3--;
+        }
+
+</script>
 </body>
 </html>
