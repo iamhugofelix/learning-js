@@ -42,6 +42,7 @@ console.log('<< If, Else, and Else If >>');
 console.log('---');
 console.log('<< For, While, Do While >>');
 
+// Exercise (15 May 2025): For, While, Do/While
 console.log('This is the "for" exercise:');
     for (let number1 = 0; number1 <= 10; number1++) {
         if (number1 % 2 === 0) {
@@ -61,13 +62,40 @@ console.log('This is the "while" exercise:');
 
 console.log('This is the "do/while" exercise:');
     let number3 = 0;
-    
+
     do {
         if (number3 % 2 === 0) {
             console.log(number3);   
         }
         number3++
     } while (number3 <= 10);
+
+console.log('---');
+console.log('<< Functions >>');
+// Exercise (15 May 2025): Function
+function sumNumber(number1, number2) {
+    const result = number1 + number2;
+    return result;
+    // Alternative: return number1 + number2;
+}
+console.log(`Sum 2 arguments: Result is ${sumNumber(2, 26)}`);
+
+function multiplyNumber(number1, number2) {
+    const result = number1 * number2;
+    return result;
+    // Alternative: return number1 * number2;
+}
+console.log(`Multiply 2 arguments: Result is ${multiplyNumber(2, 8)}`);
+
+function generatePerson(personName, personAge) {
+    const person = {
+        name: personName,
+        age: personAge,
+    }
+    return person;
+    // Alternative: return {name: personName, age: personAge};
+};
+console.log(generatePerson("Hugo", 34));
 
 </script>
 </body>
