@@ -30,8 +30,10 @@ function name (argument1, argument2) {
 }
 
 ## Objects
-const object = {
-    item1: thing,
-    item2: thing,
-    item3: thing,
+const person = {
+    name: "Hugo",
+    age: 34,
+    city: "Porto",
 }
+
+const newObject = new Object(); -> Creates a new empty object 

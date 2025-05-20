@@ -9,6 +9,7 @@
     <p>Open the browser console</p>
     <a href="./exercises.html"> Go to exercises -></a>
     <script>
+/*
 console.log('Learning variables');
         let name = 'Hugo';
         const birthYear = 1991;
@@ -102,8 +103,53 @@ function isPairNumber (number) {
 
 const pairNumber = isPairNumber(32); //resultado da função vai para dentro duma variável
 
-console.log(pairNumber);
+*/
 
+// Arrays
+const emptyArray = [];
+const filledArray = [1, "2", 3, 4, 5, true, {name: "object"}]; // Pode conter todo o tipo de informação dentro
+const firstPosition = filledArray[5]; // Encontrar a posição de um array (começa no 0)
+
+filledArray[0] = "Agora é este"; // Muda o vlaor do array na posição indicada
+emptyArray[0] = "Já não é vazio" // Se for vazio cria um valor
+filledArray[7] = "Mais um"; // se o numero for maior ao existente, adiciona um valor
+
+console.log(emptyArray);
+console.log(filledArray);
+console.log(firstPosition);
+
+// Arrays // Functions & Properties
+
+// Get the length -- .length
+console.log(filledArray.length); // Tells us how many positions there are on the array -- it's useful for cycles...
+
+// Push()
+filledArray.push("Champ"); // Adds another value to the end of the array
+console.log(filledArray);
+
+// Unshift()
+filledArray.unshift("Beginning"); // Adds another value to the beginning of the array
+console.log(filledArray);
+
+// Pop()
+filledArray.pop() // Removes the last value of the array
+console.log(filledArray);
+
+// Shift()
+filledArray.shift() // Removes the first value of the array
+console.log(filledArray);
+
+// Join()
+fillArray.join("-") // Junta todos os valores
+// Fica: ["Hugo-1-the-king"] (O "-" separa porque foi definido acima)
+
+// toString()
+fillArray.toString();
+// Fica: ["Hugo, 1, the, king"]
+
+// Splice(index, n)
+filleArray.splice(0, 2);
+// Fica: ["Hugo", 2, "the"] -- Rearranja o array (apaga os outros)
 
 </script>
 </body>

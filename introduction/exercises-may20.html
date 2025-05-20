@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises: Intro to JS</title>
+</head>
+<body>
+    <p>Open the browser console</p>
+
+<script>
+// Array Exercise
+
+// Add values to empty array
+console.log(">> Add values to empty array <<");
+
+const emptyArray = new Array(4);
+
+emptyArray[0] = "Hugo";
+emptyArray[1] = 15;
+emptyArray[2] = "the";
+emptyArray[3] = true;
+
+console.log(emptyArray);
+
+// Add values directly on creation
+console.log(">> Add values directly on creation <<");
+
+const filledArray = ["The", 1, true, "King"]
+
+console.log(filledArray);
+
+// Create a cycle for the array
+console.log(">> Create a cycle for the array <<");
+
+for (let i = 0; i < filledArray.length; i++) { // "i" is only a counter
+console.log(filledArray[i]);
+}
+
+// Get the length of an array
+console.log(">> Get the length of an array <<");
+
+const nameArray = ["Hugo", "Felix"];
+console.log(nameArray.length); // Não altera o array 
+
+// Transform an array of 3 strings into only one simple string
+console.log(">> Transform an array of 3 strings into only one simple string <<");
+
+const nameArray2 = ["Hugo", "Gonçalves", "Felix"];
+
+console.log(nameArray2.toString()); // Não altera o array 
+
+// Create a new array and remove the first and last
+console.log(">> Create a new array and remove the first and last <<");
+
+const numberArray = [1, 2, 3];
+numberArray.shift();
+numberArray.pop();
+
+console.log(numberArray);
+
+// Create an array and add a new value to the end
+console.log(">> Create an array and add a new value to the end <<");
+const numberArray2 = [1, 2, 3, 4]
+numberArray2.push("Hugo")
+
+console.log(numberArray2);
+
+// Create an array with 2 strings and transform it into a single string separated by /
+console.log(">> Create an array with 2 strings and transform it into a single string separated by / <<");
+
+const nameArray3 = ["Hugo", "Felix"];
+
+console.log(nameArray3.join(" / ")); // Não altera o array 
+
+// Create 2 arrays and joi them into a single one
+console.log(">> Create 2 arrays and joi them into a single one <<");
+
+const firstBoss = ["First", "Boss"];
+const finalBoss = ["Last", "Boss"];
+
+console.log(firstBoss.concat(finalBoss)); // Não altera o array 
+
+</script>
+</body>
+</html>

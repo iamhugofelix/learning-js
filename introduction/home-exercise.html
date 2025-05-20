@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Exercise</title>
+</head>
+<body>
+    <p>Open the browser console!</p>
+    <script>
+        console.log('This is the exercise:');
+
+        function calculateDiscount(price, discount) {
+
+            if (discount === 0) {
+                return price * 2;
+            } else if (discount < 10) {
+                return price + (price * (discount / 100)); 
+            } else if (discount => 10 && discount <= 30) {
+                return price - (price * (discount / 100));
+            } else {
+                return console.log("Try again...");
+            }
+        }
+
+        console.log(
+            calculateDiscount(200, 10)
+        );
+    </script>
+</body>
+</html>
