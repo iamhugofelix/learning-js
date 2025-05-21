@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise May 21</title>
+</head>
+<body>
+    <p>Open browser console!</p>
+    <script>
+
+        // Create an object with your data
+        const myself = {name: "Hugo", age: 34, country: "Portugal"};
+        console.log(myself);
+
+        //Create an object with your data using another way
+        const huguinho = new Object();
+        huguinho.name = "Hugo";
+        huguinho.age = 34;
+        huguinho.country = "Portugal";
+
+        console.log(huguinho);
+
+        // Get all the keys
+        console.log(Object.keys(huguinho)); // The beginning is fixed (Object.keys)
+
+        // Get all the values
+        console.log(Object.values(huguinho));
+
+        // Get keys and values
+        console.log(Object.entries(huguinho));
+
+        // Not an exercise
+        function transformText(text, word) {
+             const split = text.split(word);
+             const newText = "<b>" + word + "</b>" ;
+             split.push(newText.toUpperCase());
+             const alteredText = split.join("");
+
+             return alteredText;
+        }
+
+        console.log(transformText("Isto é um texto", "t exto"));
+
+        // Create a string with at least 10 chars
+        let text = "Hello, my name is Hugo!";
+
+        // Get the string length
+        console.log(text.length);
+
+        // What's the position of the 2nd word?
+        console.log(text.indexOf("my"));
+
+        // Replace the first word with "JAvascript is awesome!"
+        text = text.replace("Hello", "Javascript is awesome")
+        console.log(text);
+
+        // Transform the string into UPPERCASE and lowercase
+        console.log(text.toLowerCase());
+        console.log(text.toUpperCase());
+
+        // Divide the string in the word "awesome"
+        console.log(text.split("awesome"));
+
+        // Join 2 strings
+        const text01 = "This is a text. " + "You will pass!"
+        console.log(text01);
+
+        // Create 1 string from 
+        const text02 = "This is " + 1 + " string, with " + 2 + " numbers!"
+        console.log(text02);
+
+        // Create a date with Feb 6, 2020
+        const importantDate = new Date("2020-02-06");
+        console.log(importantDate);
+
+
+        // Get the week day and the year
+        console.log(importantDate.getDay());
+        console.log(importantDate.getFullYear());
+
+        // Change the date to Mar 6, 2021
+        importantDate.setMonth(2); // No need for variable re-attribution
+        importantDate.setFullYear(2021);
+
+        console.log(importantDate);
+
+    </script>
+</html>
