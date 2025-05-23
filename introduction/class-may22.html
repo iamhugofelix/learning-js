@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May 22 Class</title>
+</head>
+<body>
+    <script>
+
+        function test () {
+            console.log("Teste");
+        }
+
+        setTimeout(test, 2000); // Executa a função depois de 2 seg
+
+        // Funções anonimas
+
+        setTimeout(function () {
+            console.log("Teste");
+        }, 4000) // Executa a função depois de 4 seg, mas é uma função provisória.
+
+        // Cria uma função anonima, que faça console.log do vosso nome completo
+        const name = function() {
+            console.log("Hugo Felix");
+        }
+        name();
+
+        // Cria uma função anónima que aceite 2 números e faça a sua soma.
+        const sum = function(number1, number2) {
+            return number1 + number2;
+        }
+        console.log(sum(2, 2));
+
+        // Criem uma IIFE que faça console.log do vosso nome completo.
+        (function() {
+            console.log("Hugo Felix");
+        })();
+
+        // Criem uma IIFE que aceite 2 números e faça a sua soma.
+        (function(number1, number2) {
+            console.log(number1 + number2);
+        })(4, 4);
+
+
+    </script>
+</body>
+</html>
